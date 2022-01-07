@@ -18,13 +18,13 @@ BuildRequires : buildreq-distutils3
 Provides: icalendar
 Provides: icalendar-python
 Provides: icalendar-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(python_dateutil)
 BuildRequires : pypi(pytz)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 Internet Calendaring and Scheduling (iCalendar) for Python
