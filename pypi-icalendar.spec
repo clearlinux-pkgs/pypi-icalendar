@@ -4,7 +4,7 @@
 #
 Name     : pypi-icalendar
 Version  : 4.1.0
-Release  : 64
+Release  : 65
 URL      : https://files.pythonhosted.org/packages/32/26/f6d896b78f21a6eb640dac940abb7617f5a910fd7c9b4c213d7b4261f253/icalendar-4.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/32/26/f6d896b78f21a6eb640dac940abb7617f5a910fd7c9b4c213d7b4261f253/icalendar-4.1.0.tar.gz
 Summary  : iCalendar parser/generator
@@ -22,6 +22,9 @@ BuildRequires : pypi-pluggy
 BuildRequires : pypi-pytest
 BuildRequires : pypi-tox
 BuildRequires : pypi-virtualenv
+# Suppress stripping binaries
+%define __strip /bin/true
+%define debug_package %{nil}
 
 %description
 ==========================================================
@@ -78,12 +81,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1666723121
+export SOURCE_DATE_EPOCH=1672280588
 export GCC_IGNORE_WERROR=1
-export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$FFLAGS -fno-lto "
-export FFLAGS="$FFLAGS -fno-lto "
-export CXXFLAGS="$CXXFLAGS -fno-lto "
+export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
+export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
+export FFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CXXFLAGS="$CXXFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
