@@ -6,10 +6,10 @@
 # autospec commit: 250a666
 #
 Name     : pypi-icalendar
-Version  : 5.0.10
-Release  : 71
-URL      : https://files.pythonhosted.org/packages/40/d7/06707c968c2ce93e60eeb9f849c84e96c710660054e09791ffa3e5ef04ad/icalendar-5.0.10.tar.gz
-Source0  : https://files.pythonhosted.org/packages/40/d7/06707c968c2ce93e60eeb9f849c84e96c710660054e09791ffa3e5ef04ad/icalendar-5.0.10.tar.gz
+Version  : 5.0.11
+Release  : 72
+URL      : https://files.pythonhosted.org/packages/6c/23/187a28257fe26848d07af225cef86abe3712561bd8af93cbd3a64d6eb6ea/icalendar-5.0.11.tar.gz
+Source0  : https://files.pythonhosted.org/packages/6c/23/187a28257fe26848d07af225cef86abe3712561bd8af93cbd3a64d6eb6ea/icalendar-5.0.11.tar.gz
 Summary  : iCalendar parser/generator
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -74,10 +74,10 @@ python3 components for the pypi-icalendar package.
 
 
 %prep
-%setup -q -n icalendar-5.0.10
-cd %{_builddir}/icalendar-5.0.10
+%setup -q -n icalendar-5.0.11
+cd %{_builddir}/icalendar-5.0.11
 pushd ..
-cp -a icalendar-5.0.10 buildavx2
+cp -a icalendar-5.0.11 buildavx2
 popd
 
 %build
@@ -85,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1698936126
+export SOURCE_DATE_EPOCH=1699285165
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
