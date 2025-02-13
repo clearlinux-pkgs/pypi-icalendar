@@ -7,7 +7,7 @@
 #
 Name     : pypi-icalendar
 Version  : 6.1.1
-Release  : 81
+Release  : 82
 URL      : https://files.pythonhosted.org/packages/fd/b3/8fcd017f8fbaf5c3b8cd1e21dcc3f12158ce08c577b426c3c8eb21373656/icalendar-6.1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/fd/b3/8fcd017f8fbaf5c3b8cd1e21dcc3f12158ce08c577b426c3c8eb21373656/icalendar-6.1.1.tar.gz
 Summary  : iCalendar parser/generator
