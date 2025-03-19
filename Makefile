@@ -1,5 +1,5 @@
 PKG_NAME := pypi-icalendar
-URL = https://files.pythonhosted.org/packages/fd/b3/8fcd017f8fbaf5c3b8cd1e21dcc3f12158ce08c577b426c3c8eb21373656/icalendar-6.1.1.tar.gz
+URL = https://files.pythonhosted.org/packages/c0/04/0ca754a6da85c09e0edc704e38a661995c493c6a019e51c7465911431fb8/icalendar-6.1.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
